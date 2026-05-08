@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>COCAINE® — NOT FOR EVERYONE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;800;900&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+<div class="loader" id="loader">
+  <div class="loader-meta">© 2026 — MILANO</div>
+  <div class="loader-meta-r">Loading [001]</div>
+  <div class="loader-text" aria-hidden="true">
+    <span>C</span><span>O</span><span>C</span><span>A</span><span>I</span><span>N</span><span>E</span>
+  </div>
+  <div class="loader-bar"></div>
+</div>
+<div class="page-trans" id="pageTrans">
+  <div class="panel"></div><div class="panel"></div><div class="panel"></div>
+  <div class="panel"></div><div class="panel"></div><div class="panel"></div>
+</div>
+<div class="page-trans-label" id="pageTransLabel"></div>
+<div class="progress" id="progress"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="toast-wrap" id="toastWrap"></div>
+
+<nav id="nav">
+  <a href="#home" class="logo" data-link>COCAINE<sup>®</sup></a>
+  <ul>
+    <li><a href="#shop" data-link>Shop</a></li>
+    <li><a href="#manifesto" data-link>Manifesto</a></li>
+    <li><a href="#lookbook" data-link>Lookbook</a></li>
+    <li><a href="#contact" data-link>Contact</a></li>
+  </ul>
+  <div class="right-side">
+    <a href="#account" class="nav-icon" data-link id="navAccount"><span>Account</span></a>
+    <a href="#cart" class="nav-icon" data-link id="navCart"><span>Bag</span> <b class="empty" id="cartCount">0</b></a>
+  </div>
+</nav>
+
+<main class="page" id="page-home" data-page="home">
+  <section class="hero" id="hero">
+    <div class="hero-bg-text" id="heroBgText">COCAINE</div>
+    <div class="hero-marker">DROP 001 · A/W 2026</div>
+    <h1>
+      <span class="line"><span>NOT FOR</span></span>
+      <span class="line"><span>EVERYONE</span></span>
+    </h1>
+    <div class="hero-bottom">
+      <p class="hero-tag">Un brand nato per chi vive la città a velocità diversa.<br>Collezione limitata. Nessuna replica. Nessun compromesso.</p>
+      <a href="#shop" class="btn-primary with-arrow" data-link><span>Esplora il drop</span></a>
+    </div>
+    <div class="hero-scroll">SCROLL</div>
+  </section>
+  <div class="marquee">
+    <div class="marquee-track" id="marquee">
+      <div>
+        <span>Cocaine®</span><span class="star">✦</span><span class="hollow">Since 2026</span><span class="star">✦</span>
+        <span>Milano · Berlino · Tokyo</span><span class="star">✦</span><span class="hollow">Drop 001</span><span class="star">✦</span>
+        <span>Edizione Limitata</span><span class="star">✦</span><span class="hollow">Not For Everyone</span><span class="star">✦</span>
+      </div>
+      <div>
+        <span>Cocaine®</span><span class="star">✦</span><span class="hollow">Since 2026</span><span class="star">✦</span>
+        <span>Milano · Berlino · Tokyo</span><span class="star">✦</span><span class="hollow">Drop 001</span><span class="star">✦</span>
+        <span>Edizione Limitata</span><span class="star">✦</span><span class="hollow">Not For Everyone</span><span class="star">✦</span>
+      </div>
+    </div>
+  </div>
+  <section class="h-scroll-section">
+    <div class="h-scroll-pin">
+      <div class="h-scroll-track" id="hTrack">
+        <div class="h-scroll-intro">
+          <div class="num">— 01 / Collezione</div>
+          <h2>Quattro<br>pezzi.<br><em>Nessun</em> compromesso.</h2>
+          <p>Costruiti in cotone pesante 450 gsm, stampati artigianalmente in Italia. 200 unità per ogni pezzo.</p>
+        </div>
+      </div>
+      <div class="h-scroll-progress">
+        <div class="label">Drop 001</div>
+        <div class="bar"><div class="bar-fill" id="hBar"></div></div>
+        <div class="label" id="hCounter">01 / 04</div>
+      </div>
+    </div>
+  </section>
+  <section class="manifesto-section" id="manifesto">
+    <div class="manifesto-bg" id="manifestoBg">MANIFESTO</div>
+    <div class="manifesto-content">
+      <div class="manifesto-num reveal">— 02 / Manifesto</div>
+      <h2 class="manifesto-title" id="manifestoTitle"></h2>
+      <div class="manifesto-stats">
+        <div class="stat reveal" data-target="04"><span class="num">04</span><div class="label">Pezzi nel drop</div></div>
+        <div class="stat reveal" data-target="200"><span class="num">200</span><div class="label">Unità totali</div></div>
+        <div class="stat reveal" data-target="100" data-suffix="%"><span class="num">100%</span><div class="label">Made in Italy</div></div>
+        <div class="stat reveal" data-target="00"><span class="num">00</span><div class="label">Ristampe</div></div>
+      </div>
+    </div>
+  </section>
+  <section class="editorial" id="lookbook">
+    <div class="editorial-row">
+      <div class="editorial-img-wrap" data-label="Editorial 001 / Subject A"><img id="edImg1" alt=""/></div>
+      <div class="editorial-text reveal">
+        <div class="tag">— 03 / Lookbook</div>
+        <h3>L'estetica della notte che non finisce.</h3>
+        <p>Ogni drop è accompagnato da un editoriale visivo che racconta il mondo del brand. Silhouette, grana pellicola, luci dure, architetture urbane.</p>
+        <a href="#shop" data-link>Guarda il lookbook completo →</a>
+      </div>
+    </div>
+    <div class="editorial-row reverse">
+      <div class="editorial-img-wrap" data-label="Editorial 001 / Subject B"><img id="edImg2" alt=""/></div>
+      <div class="editorial-text reveal">
+        <div class="tag">— 04 / Process</div>
+        <h3>Stampato a Milano. Pensato ovunque.</h3>
+        <p>Ogni pezzo passa per le mani di artigiani milanesi prima di partire. La grafica è studiata pixel per pixel, la stampa controllata capo per capo.</p>
+        <a href="#shop" data-link>Scopri il processo →</a>
+      </div>
+    </div>
+  </section>
+  <section class="newsletter" id="contact">
+    <div class="newsletter-bg" id="newsletterBg">JOIN&nbsp;&nbsp;JOIN&nbsp;&nbsp;JOIN</div>
+    <div class="newsletter-inner">
+      <h2 class="reveal">Unisciti<br>all'elenco.</h2>
+      <p class="reveal">Accesso anticipato ai drop. Inviti agli eventi privati. Zero spam.</p>
+      <form class="reveal" id="newsletterForm">
+        <input type="email" placeholder="tua@email.com" required maxlength="120"/>
+        <button type="submit">Invia →</button>
+      </form>
+      <div class="disclaimer reveal">Iscrivendoti accetti la privacy policy</div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">COCAINE®</div>
+        <p>Brand di streetwear con sede a Milano. Collezioni limitate, stampate in Italia, distribuite globalmente.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#shop" data-link>Drop 001</a></li>
+          <li><a href="#cart" data-link>Carrello</a></li>
+          <li><a href="#account" data-link>Account</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Info</h4>
+        <ul>
+          <li><a href="#manifesto" data-link>Chi siamo</a></li>
+          <li><a href="#contact" data-link>Contatti</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Sistema</h4>
+        <ul>
+          <li><a href="#" rel="noopener nofollow">Instagram</a></li>
+          <li><a href="#" rel="noopener nofollow">TikTok</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 COCAINE® · Milano</div>
+      <div class="warn">Brand e nome utilizzati esclusivamente come riferimento stilistico.</div>
+      <div>P.IVA IT00000000000</div>
+    </div>
+    <div class="footer-giant"><span>COCAINE®</span></div>
+  </footer>
+</main>
+
+<main class="page shop-page" id="page-shop" data-page="shop">
+  <div class="shop-head">
+    <div class="num">— Drop 001 / Collezione completa</div>
+    <h1><span>Tutti i pezzi.</span></h1>
+  </div>
+  <div class="shop-grid" id="shopGrid"></div>
+</main>
+
+<main class="page product-page" id="page-product" data-page="product">
+  <a href="#shop" class="product-back" data-link>← Torna allo shop</a>
+  <div class="product-layout">
+    <div class="product-gallery">
+      <div class="product-gallery-meta"><span id="prodSku">CN-000</span><span>VIEW 01 / 01</span></div>
+      <img class="product-gallery-img" id="prodImg" src="" alt=""/>
+    </div>
+    <div class="product-info-side">
+      <div class="meta" id="prodMeta">— Drop 001</div>
+      <h1><span id="prodName">Loading</span></h1>
+      <div class="product-price" id="prodPrice">€0</div>
+      <p class="product-desc" id="prodDesc"></p>
+      <div class="size-selector" id="sizeSelector"></div>
+      <button class="btn-primary product-cta" id="addToCart" type="button"><span id="addToCartLabel">Aggiungi al carrello</span></button>
+      <div class="product-details">
+        <h4>Dettagli prodotto</h4>
+        <ul id="prodDetails"></ul>
+      </div>
+    </div>
+  </div>
+  <section class="related">
+    <h3>Potresti voler vedere anche</h3>
+    <div class="related-grid" id="relatedGrid"></div>
+  </section>
+</main>
+
+<main class="page app-page" id="page-cart" data-page="cart">
+  <div class="app-head">
+    <div><div class="num">— Carrello</div><h1><span>Carrello.</span></h1></div>
+    <div class="meta" id="cartItemsCount">0 articoli</div>
+  </div>
+  <div id="cartContent"></div>
+</main>
+
+<main class="page app-page" id="page-checkout" data-page="checkout">
+  <div class="app-head">
+    <div><div class="num">— Checkout</div><h1><span>Quasi finito.</span></h1></div>
+  </div>
+  <div class="checkout-steps" id="checkoutSteps">
+    <div class="checkout-step active" data-step="1"><span class="dot"></span>Spedizione</div>
+    <div class="checkout-step" data-step="2"><span class="dot"></span>Pagamento</div>
+    <div class="checkout-step" data-step="3"><span class="dot"></span>Conferma</div>
+  </div>
+  <div id="checkoutContent"></div>
+</main>
+
+<main class="page app-page" id="page-order" data-page="order"><div id="orderContent"></div></main>
+<main class="page app-page" id="page-account" data-page="account"><div id="accountContent"></div></main>
+<main class="page auth-page" id="page-auth" data-page="auth"><div id="authContent"></div></main>
+<main class="page app-page" id="page-admin" data-page="admin"><div id="adminContent"></div></main>
+<main class="page auth-page" id="page-admin-login" data-page="admin-login"><div id="adminLoginContent"></div></main>
+
+<div class="admin-detail-modal" id="adminDetailModal" role="dialog" aria-modal="true">
+  <div class="admin-detail-content" id="adminDetailContent"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
